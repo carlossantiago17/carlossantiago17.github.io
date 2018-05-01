@@ -1,72 +1,56 @@
 <!DOCTYPE html>
-<header> <title> table</title>
-<style>
-th{
-	background-color: #0600FF;
-	color:##D1A0BE
-}
-td {
-	background-color: ##0600FF;
-	color: #fff;
-}
-body {
-	background-color: #000000; 
-}
-</style>
-</header>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  </style>
+</head>
 <body>
-	<table>
-		<tr>
-			<th>Component</th>
-			<th>Brand</th>
-			<th>Model</th>
-			<th>Cost</th>
-			
-		</tr>
-		<tr>
-			<th>CPU</th>
-			<td>AMD</td>
-			<td>Ryzen 5</td>
-			<td>$169.99</td>
-			
-			
-			<tr>
-			<th>CPU Cooler</th>	
-			<td>NZXT</td>
-			<td>kraken</td>
-			<td>$147.49</td>
-		</tr>
-			<th>Motherboard</th>
-			<td>Gigabyte</td>
-			<td>GA-AB350</td>
-			<td>$84.99</td>
-		</tr>
-			<th>Storage</th>
-			<td>Western Digital</td>
-			<td>Caviar Blue 1 TB</td>
-			<td>$46.68</td>
-		</tr>
-			<th>Memory</th>
-			<td>G.Skill </td>
-			<td>Trident Z</td>
-			<td>$209.99</td>
-		</tr>
-			<th>Video Card</th>
-			<td>EVGA </td>
-			<td>GeForce GTX 1050</td>
-			<td>$189.99</td>
-		</tr>
-			<th>Case</th>
-			<td>NZXT</td>
-			<td>s340</td>
-			<td>$66.99</td>
-		</tr>
-			<th>Power Supply</th>
-			<td>SeaSonic</td>
-			<td>FOCUS Plus Gold 650W</td>
-			<td>$83.99</td>
-		</tr>
-					<td>Total: $1000.11</td>
-	</table>
+
+<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
+  <h1>Bootstrap Affix Example</h1>
+  <h3>Fixed (sticky) navbar on scroll</h3>
+  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+</div>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Basic Topnav</a></li>
+    <li><a href="#">Page 1</a></li>
+    <li><a href="#">Page 2</a></li>
+    <li><a href="#">Page 3</a></li>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="height:1000px">
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+</div>
+
 </body>
 </html>
