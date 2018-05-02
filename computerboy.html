@@ -1,56 +1,116 @@
-<!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+ 
+  <title>Carlos's Presentation</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  .affix {
-      top: 0;
-      width: 100%;
-      z-index: 9999 !important;
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
   }
-
-  .affix + .container-fluid {
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #000000; 
+      color: #fff;
+  }
+  .bg-2 { 
+      background-color: #fff;
+      color: #000000;
+  }
+  .bg-3 { 
+      background-color: #000000; 
+      color: #fff;
+  }
+  .bg-4 { 
+      background-color: #ffffff; 
+      color: #000
+  }
+  .container-fluid {
       padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
   }
   </style>
 </head>
 <body>
 
-<div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
-  <h1>Intro</h1>
-  <h3>Fixed (sticky) navbar on scroll</h3>
-  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
-  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
-</div>
-
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Basic Topnav</a></li>
-    <li><a href="#">Page 1</a></li>
-    <li><a href="#">Page 2</a></li>
-    <li><a href="#">Page 3</a></li>
-  </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Myself</a></li>
+        <li><a href="#">Challenges</a></li>
+        <li><a href="#">Personal Satisfaction</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<div class="container-fluid" style="height:1000px">
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
-  <h1>Some text to enable scrolling</h1>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Intro</h3>
+  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>This is me</h3>
+ <h4> Im a kind hearted, smart person at times, and have a great personality.</h4>
+<h4> The challenges for me would have been presenting and learning php.</h4>
+<h4> My personal satisfaction would be my local host i feel like i did my best on it.</h4>
 </div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Future</h3>
+  <p>My career plan is to go to columbia college to get my bachelor in cyber security to become a cryptologist. My secondary plan is to become a teacher once i become old. </p>
+ 
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Tri Tech</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p></p>
+    </div>
+    <div class="col-sm-4"> 
+      <p>The Advantages of Tri Tech are all the Scholorships it offers and the hands on learning.</p>
+    </div>
+    <div class="col-sm-4"> 
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>My local host<a href="https://10.183.2.4</a></p> 
+</footer>
 
 </body>
 </html>
